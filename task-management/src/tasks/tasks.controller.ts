@@ -18,6 +18,7 @@ import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
 export class TasksController {
   constructor(private tasksService: TasksService) {}
 
+  // handling incoming requests and sending back responses to the client
   @Get()
   getTasks(@Query() filterDto: GetTasksFilterDto): Task[] {
     if (Object.keys(filterDto).length) {
