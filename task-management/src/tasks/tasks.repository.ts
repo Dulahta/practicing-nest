@@ -7,6 +7,7 @@ import { TaskStatus } from './task.model';
 import { Task } from './task.entity';
 
 @Injectable()
+// complex database interactions/operations and data manipulation logic related to tasks
 export class TasksRepository {
   constructor(
     @InjectRepository(Task)
