@@ -41,6 +41,6 @@ export class UsersRepository {
   }
 
   async findOne(where: any): Promise<User | null> {
-    return this.repository.findOne(where);
+    return this.repository.findOneBy(where);
   }
 }
